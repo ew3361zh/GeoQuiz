@@ -18,6 +18,7 @@ class QuizViewModel : ViewModel() {
     // initialize current index for question bank at 0, use var because it will change to move through question bank
     // when we moved it from MainActivity, we got rid of the private part
     var currentIndex = 0
+    var isCheater = false
 
     val currentQuestionAnswer: Boolean
         get() = questionBank[currentIndex].answer
